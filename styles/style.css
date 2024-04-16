@@ -3,3 +3,44 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  position: relative;
+  background-image: url("../images/cover-image-dark.png");
+  background-position: 0%;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--accent-font-color);
+  font-size: var(--font-size);
+}
+
+.decor-element {
+  position: absolute; 
+  top: var(--decor-elem-padding); 
+  right: var(--decor-elem-padding); 
+  padding-right: 0.5em;
+}
+
+.decor-element::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.1em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%; /* This creates the ellipse shape */
+    background-color: var(--accent-font-color); /* Background color of the ellipse */
+    box-shadow: 0px 0px 4px 2px var(--accent-font-color);
+    margin-bottom: 0.1em;
+}
+
+.decor-element::before {
+  content: "";
+  display: inline-block;
+  left: 2.8em;
+  border-top: 1px solid var(--accent-font-color);
+  border-right: 1px solid var(--accent-font-color);
+  position: relative;
+  width: 1em;
+  height: 1em;
+}

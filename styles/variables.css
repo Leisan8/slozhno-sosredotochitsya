@@ -2,3 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --decor-elem-padding: 10px;
+  --accent-font-color: #FF0070;
+  --font-color: #FF0070;
+  --font-size: clamp(1.125rem, 1.0816rem + 0.185vw, 1.25rem);
+}
