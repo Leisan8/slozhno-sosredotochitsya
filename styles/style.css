@@ -2,23 +2,65 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: 'IBM Plex Mono', monospace;
+  background-image: url('../images/cover-image-dark.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
-  position: relative;
+  /* position: relative;
   background-image: url("../images/cover-image-dark.png");
-  background-position: 0%;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
   width: 100vw;
   height: 100vh;
-  font-family: 'IBM Plex Mono', monospace;
   color: var(--accent-font-color);
   font-size: var(--font-size);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 1px solid var(--accent-font-color);
+  border-left: 1px solid var(--accent-font-color);
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin-left: var(--common-padding);
+  margin-bottom: var(--common-padding);
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  grid-row: 1;
+  padding-right: var(--common-padding);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
 }
 
 .decor-element {
   position: absolute; 
-  top: var(--decor-elem-padding); 
-  right: var(--decor-elem-padding); 
+  top: var(--common-padding); 
+  right: var(--common-padding); 
   padding-right: 0.5em;
 }
 
@@ -43,4 +85,47 @@
   position: relative;
   width: 1em;
   height: 1em;
+}
+
+.header__title {
+  font-weight: bold;
+  line-height: 0.9em;
+  color: var(--header-color);
+  font-size: var(--font-title-size);
+  text-shadow: 0.03em 0.03em 0 var(--header-shadow); /* horizontal offset, vertical offset, blur radius, shadow color */
+}
+.title-decor {
+  margin-left: var(--common-padding);
+  margin-right: var(--common-padding);
+  height: fit-content;
+  font-size: var(--font-size);
+  font-weight: bold;
+  color: var(--font-color);
+  background-color: var(--accent-font-color);
+}
+
+.main__section {
+  display: grid;
+  gap: 1em;
+}
+
+.main__section-title {
+  font-size: var(--font-size);
+  font-weight: bold;
+  color: var(--accent-font-color);
+  padding-left: var(--common-padding);
+  padding-right: var(--common-padding);
+}
+
+.main__subsection {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.main__section-text { 
+  font-size: var(--font-size);
+  color: var(--section-font-color);
+  padding-left: var(--common-padding);
+  padding-right: var(--common-padding);
 }

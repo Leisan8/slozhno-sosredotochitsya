@@ -3,8 +3,15 @@
   и их переопределение под различные устройства
 */
 :root {
-  --decor-elem-padding: 10px;
+  --common-padding: 10px;
   --accent-font-color: #FF0070;
-  --font-color: #FF0070;
+  --font-color: #000000;
   --font-size: clamp(1.125rem, 1.0816rem + 0.185vw, 1.25rem);
+  --font-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-color: #DB00FF;
+  --header-shadow: #FF0070;
+  --section-font-color: #F1B2CE;
+  --subsection-padding: 1em;
+  --section-padding: 1em;
 }
+
