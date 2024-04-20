@@ -10,3 +10,64 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page.theme_dark {
+  background-image: var(--backgroung-path);
+}
+
+.header {
+  color: var(--accent-font-color);
+  font-size: var(--font-size);
+}
+
+.decor-element {
+  position: absolute; 
+  top: var(--common-padding); 
+  right: var(--common-padding); 
+  padding-right: 0.5em;
+}
+
+.decor-element::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.1em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%; /* This creates the ellipse shape */
+    background-color: var(--accent-font-color); /* Background color of the ellipse */
+    box-shadow: 0px 0px 4px 2px var(--accent-font-color);
+    margin-bottom: 0.1em;
+}
+
+.decorated-zone::before {
+  content: "";
+  display: inline-block;
+  border-top: 1px solid var(--accent-font-color);
+  border-right: 1px solid var(--accent-font-color);
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  margin-right: var(--common-padding);
+  margin-top: var(--common-padding);
+  top: 0;
+  right: 0;
+}
+
+.accent__title {
+  color: var(--header-color);
+}
+.title-decor {
+  color: var(--font-color);
+  background-color: var(--accent-text_background-color);
+}
+
+.main__section-title {
+  color: var(--accent-font-color);
+}
+
+.main__section-text {
+  color: var(--section-font-color);
+}

@@ -3,7 +3,6 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex Mono', monospace;
-  background-image: url('../images/cover-image-dark.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,9 +10,6 @@
 }
 
 .header {
-  color: var(--accent-font-color);
-  font-size: var(--font-size);
-
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -57,25 +53,6 @@
   text-transform: lowercase;
 }
 
-.decor-element {
-  position: absolute; 
-  top: var(--common-padding); 
-  right: var(--common-padding); 
-  padding-right: 0.5em;
-}
-
-.decor-element::after {
-    content: "";
-    display: inline-block;
-    margin-left: 0.1em;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%; /* This creates the ellipse shape */
-    background-color: var(--accent-font-color); /* Background color of the ellipse */
-    box-shadow: 0px 0px 4px 2px var(--accent-font-color);
-    margin-bottom: 0.1em;
-}
-
 .decorated-zone::before {
   content: "";
   display: inline-block;
@@ -93,7 +70,6 @@
 .accent__title {
   font-weight: bold;
   line-height: 0.9em;
-  color: var(--header-color);
   font-size: var(--font-title-size);
   text-shadow: 0.03em 0.03em 0 var(--header-shadow); /* horizontal offset, vertical offset, blur radius, shadow color */
 }
@@ -103,8 +79,6 @@
   height: fit-content;
   font-size: var(--font-size);
   font-weight: bold;
-  color: var(--font-color);
-  background-color: var(--accent-font-color);
 }
 
 .main__section {
@@ -115,7 +89,6 @@
 .main__section-title {
   font-size: var(--font-size);
   font-weight: bold;
-  color: var(--accent-font-color);
   padding-left: var(--common-padding);
   padding-right: var(--common-padding);
 }
@@ -128,7 +101,6 @@
 
 .main__section-text { 
   font-size: var(--font-size);
-  color: var(--section-font-color);
   padding-left: var(--common-padding);
   padding-right: var(--common-padding);
 }
