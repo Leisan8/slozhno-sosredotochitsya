@@ -3,11 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
-  --common-padding: 10px;
+  --common-padding: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
   --accent-font-color: #FF0070;
   --accent-text_background-color: #FF0070;
   --font-color: #000000;
-  --font-size: clamp(1.125rem, 1.0816rem + 0.185vw, 1.25rem);
+  --font-size: 1.125rem;
   --font-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --header-color: #DB00FF;
   --header-shadow: #FF0070;
