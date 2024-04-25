@@ -14,6 +14,12 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.main {
+  display: grid;
+  gap: 5em;
+}
+
+
 .decorated-zone {
   position: relative;
   width: 100vw;
@@ -134,11 +140,55 @@
     align-self: center;
   }
 
-  .title-decor {
+  .header .title-decor {
     display: flex;
     justify-self: end;
     flex-direction: column;
     max-width: 50%;
   }
- 
+
+  .main__section:nth-child(odd) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+  .main__section:nth-child(odd) .main__section-title {
+    grid-column: 1;
+  }
+
+  .main__section:nth-child(odd) .main__subsection {
+    grid-column: 2;
+  }
+  
+  .main__section:last-child .main__subsection:last-child {
+    grid-column: span 3;
+  }
+
+  .main__image-set {
+    padding: var(--common-padding);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: clamp(48.75rem, -433.5rem + 1004.688vi, 209.5rem);
+  }
+
+  .main__image-set__item__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .main__image-set__item__image--sunset {
+    grid-column: span 2;
+  }
+  .main__image-set__item__image--icecream {
+    grid-row: span 2;
+  }
+  .main__image-set__item__image--tape {
+    grid-row: span 2;
+  }
+  .main__image-set__item__image--street {
+    grid-column: span 2;
+  }
 }
