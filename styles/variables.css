@@ -5,6 +5,7 @@
 :root {
   --common-padding: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
   --accent-font-color: #FF0070;
+  --accent-font-color_semitransparent: rgba(255, 0, 112, 0.4);
   --accent-text_background-color: #FF0070;
   --font-color: #000000;
   --font-size: 1.125rem;
