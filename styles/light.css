@@ -17,7 +17,8 @@
   --header-shadow: #FF8DCB;
   --backgroung-path: url(../images/cover-image-light.png);
   --accent-text_background-color: #FF8DCB;
-  --decor_elem_display: none
+  --decor_elem_display: none;
+  --page-background-color: #FFF;
 }
 /* Остальные стили */
 
@@ -31,6 +32,7 @@
       --header-shadow: #FF8DCB;
       --backgroung-path: url(../images/cover-image-light.png);
       --accent-text_background-color: #FF8DCB;
-      --decor_elem_display: none
+      --decor_elem_display: none;
+      --page-background-color: #FFF;
   }
 }
