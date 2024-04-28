@@ -18,6 +18,7 @@
 }
 
 .decor-element {
+  display: var(--decor_elem_display);
   position: absolute; 
   top: var(--common-padding); 
   right: var(--common-padding); 
@@ -26,7 +27,7 @@
 
 .decor-element::after {
     content: "";
-    display: inline-block;
+    display: var(--decor_elem_display);
     margin-left: 0.1em;
     width: 0.5em;
     height: 0.5em;

@@ -16,14 +16,8 @@
   --header-color: #FFC2E6;
   --header-shadow: #FF8DCB;
   --backgroung-path: url(../images/cover-image-light.png);
-}
-
-.theme_light .title-decor {
   --accent-text_background-color: #FF8DCB;
-}
-
-.theme_light .decor-element {
-  display: none
+  --decor_elem_display: none
 }
 /* Остальные стили */
 
@@ -36,13 +30,7 @@
       --header-color: #FFC2E6;
       --header-shadow: #FF8DCB;
       --backgroung-path: url(../images/cover-image-light.png);
-  }
-
-  .theme_light .title-decor {
-    --accent-text_background-color: #FF8DCB;
-  }
-  
-  .theme_light .decor-element {
-    display: none
+      --accent-text_background-color: #FF8DCB;
+      --decor_elem_display: none
   }
 }
