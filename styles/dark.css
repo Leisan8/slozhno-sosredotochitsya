@@ -71,3 +71,8 @@
 .main__section-text {
   color: var(--section-font-color);
 }
+
+.main__section-link {
+  text-shadow: 0.1em 0.1em 0 var(--header-shadow);
+  text-decoration: none;
+}
