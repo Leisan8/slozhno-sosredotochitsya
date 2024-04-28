@@ -56,6 +56,12 @@
 .title-decor {
   color: var(--font-color);
   background-color: var(--accent-text_background-color);
+  margin-left: var(--common-padding);
+  margin-right: var(--common-padding);
+  height: fit-content;
+  font-size: var(--font-size);
+  font-weight: bold;
+  max-width: 100%; 
 }
 
 .main__section-title {
@@ -79,7 +85,7 @@
 
 .decorated-zone {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -135,13 +141,6 @@
   line-height: 0.9em;
   font-size: var(--font-title-size);
   text-shadow: 0.03em 0.03em 0 var(--header-shadow); /* horizontal offset, vertical offset, blur radius, shadow color */
-}
-.title-decor {
-  margin-left: var(--common-padding);
-  margin-right: var(--common-padding);
-  height: fit-content;
-  font-size: var(--font-size);
-  font-weight: bold;
 }
 
 .main__section {
