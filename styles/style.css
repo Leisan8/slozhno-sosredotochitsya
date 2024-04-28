@@ -16,6 +16,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   color: var(--accent-font-color);
   font-size: var(--font-size);
+  gap: 3em;
 }
 
 .decor-element {
@@ -193,7 +194,7 @@
   align-items: center; 
 }
 
-@media (min-width: 768px) and (min-height: 1024px) {
+@media (min-width: 768px) {
   .accent__title {
     display: flex;
     align-self: center;
@@ -254,7 +255,7 @@
 
 
 
-@media (min-width: 1024px) and (min-height: 768px) {
+@media (min-width: 1024px) {
   .header__theme-menu {
     display: flex;
     justify-content: center;
@@ -270,77 +271,16 @@
     gap: 0.5em;
   }
 
-  .accent__title {
-    display: flex;
-    align-self: center;
-  }
-
-  .header .title-decor {
-    display: flex;
-    justify-self: end;
-    flex-direction: column;
-    max-width: 50%;
-  }
-
   .main__section:nth-child(even) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr, auto;
   }
-  
-  .main__section:nth-child(odd) .main__section-title {
-    grid-row: 1;
-  }
 
   .main__section:nth-child(even) .main__subsection {
     grid-row: 2;
   }
-  
 
-  .main__section:nth-child(odd) {
-    display: grid;
-    grid-template-columns: 1fr auto;
-  }
-  
-  .main__section:nth-child(odd) .main__section-title {
-    grid-column: 1;
-  }
-
-  .main__section:nth-child(odd) .main__subsection {
-    grid-column: 2;
-  }
-  
-  .main__section:last-child .main__subsection:last-child {
-    grid-column: span 3;
-  }
-
-  .main__image-set {
-    padding: var(--common-padding);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: clamp(48rem, 0rem + 100vi, 64rem);
-  }
-
-  .main__image-set__item__image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .main__image-set__item__image--sunset {
-    grid-column: span 2;
-  }
-  .main__image-set__item__image--icecream {
-    grid-row: span 2;
-  }
-  .main__image-set__item__image--tape {
-    grid-row: span 2;
-  }
-  .main__image-set__item__image--street {
-    grid-column: span 2;
-  }
 }
 
 
