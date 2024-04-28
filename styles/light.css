@@ -15,9 +15,7 @@
   --font-color: #353430;
   --header-color: #FFC2E6;
   --header-shadow: #FF8DCB;
-  
-
-  background-image: url(../images/cover-image-light.png);
+  --backgroung-path: url(../images/cover-image-light.png);
 }
 
 .theme_light .title-decor {
@@ -37,9 +35,7 @@
       --font-color: #353430;
       --header-color: #FFC2E6;
       --header-shadow: #FF8DCB;
-      
-
-      background-image: url(../images/cover-image-light.png);
+      --backgroung-path: url(../images/cover-image-light.png);
   }
 
   .theme_light .title-decor {

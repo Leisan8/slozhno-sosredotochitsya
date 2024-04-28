@@ -120,6 +120,7 @@
   background-color: transparent;
   border: none;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .decorated-zone::before {
