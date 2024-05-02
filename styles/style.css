@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-* { outline: 1px solid pink; }
+/* * { outline: 1px solid pink; } */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -32,7 +32,7 @@
 .decor-element::after {
     content: "";
     display: var(--decor_elem_display);
-    margin-left: 0.1em;
+    margin-left: 0.35em;
     width: 0.5em;
     height: 0.5em;
     border-radius: 50%; /* This creates the ellipse shape */
@@ -43,6 +43,7 @@
 
 .accent__title {
   color: var(--header-color);
+  padding-left: var(--common-padding);
 }
 
 .title-decor {
@@ -87,8 +88,8 @@
   border-bottom: 1px solid var(--accent-font-color);
   border-left: 1px solid var(--accent-font-color);
   position: absolute;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   left: var(--common-padding);
   bottom: var(--common-padding);
 }
@@ -99,6 +100,7 @@
   align-items: end;
   grid-row: 1;
   padding-right: var(--common-padding);
+  padding-bottom: var(--common-padding);
 }
 
 .header__theme-menu-list {
@@ -120,8 +122,8 @@
   border-top: 1px solid var(--accent-font-color);
   border-right: 1px solid var(--accent-font-color);
   position: absolute;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   top: var(--common-padding);
   right: var(--common-padding);
 }
@@ -136,6 +138,7 @@
 .main__section {
   display: grid;
   gap: 1em;
+  padding-top: 60px;
 }
 
 .main__section-title {
@@ -189,18 +192,25 @@
   .accent__title {
     display: flex;
     align-self: center;
+    padding-left: 0;
+  }
+
+  .header__theme-menu-button_active {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .header .title-decor {
     display: flex;
     justify-self: end;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 47%;
+    padding-left: 0;
   }
 
   .main__section:nth-child(odd) {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 2fr;
   }
   
   .main__section:nth-child(odd) .main__section-title {
