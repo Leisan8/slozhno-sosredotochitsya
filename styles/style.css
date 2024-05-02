@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-* { outline: 1px solid red; }
+* { outline: 1px solid pink; }
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -39,20 +39,6 @@
     background-color: var(--accent-font-color); /* Background color of the ellipse */
     box-shadow: 0px 0px 4px 2px var(--accent-font-color);
     margin-bottom: 0.1em;
-}
-
-.decorated-zone::before {
-  content: "";
-  display: inline-block;
-  border-top: 1px solid var(--accent-font-color);
-  border-right: 1px solid var(--accent-font-color);
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  margin-right: var(--common-padding);
-  margin-top: var(--common-padding);
-  top: 0;
-  right: 0;
 }
 
 .accent__title {
@@ -103,10 +89,8 @@
   position: absolute;
   width: 1em;
   height: 1em;
-  bottom: 0;
-  left: 0;
-  margin-left: var(--common-padding);
-  margin-bottom: var(--common-padding);
+  left: var(--common-padding);
+  bottom: var(--common-padding);
 }
 
 .header__theme-menu {
@@ -138,10 +122,8 @@
   position: absolute;
   width: 1em;
   height: 1em;
-  margin-right: var(--common-padding);
-  margin-top: var(--common-padding);
-  top: 0;
-  right: 0;
+  top: var(--common-padding);
+  right: var(--common-padding);
 }
 
 .accent__title {
