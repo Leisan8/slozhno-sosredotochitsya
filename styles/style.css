@@ -292,3 +292,17 @@
 .header__theme-menu-button:hover {
   outline: 1px solid var(--accent-font-color_semitransparent);
 }
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-font-color);
+}
+
+.main__section-link:hover {
+  border-bottom: 1px solid var(--section-font-color);
+}
+
+.main__section-link:focus {
+  outline: none;
+  border: 1px solid var(--section-font-color);
+}
