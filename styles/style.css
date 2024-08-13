@@ -189,6 +189,10 @@
   pointer-events: none;
 }
 
+.additional_margin {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   .accent__title {
     display: flex;
