@@ -188,7 +188,7 @@
   border: 1px solid var(--accent-font-color);
   pointer-events: none;
 }
-
+/* test */
 @media (min-width: 768px) {
   .accent__title {
     display: flex;
