@@ -188,7 +188,7 @@
   border: 1px solid var(--accent-font-color);
   pointer-events: none;
 }
-/* test */
+
 @media (min-width: 768px) {
   .accent__title {
     display: flex;
@@ -210,13 +210,22 @@
   }
 
   .main__section {
-    gap: 0;
+    column-gap: 0;
+    row-gap: 1.2rem;
     padding-top: 3.9em;
+  }
+
+  .main__section-title {
+    padding-right: 0;
   }
 
   .main__section:nth-child(odd) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  .main__section:nth-child(even) .main__section-title {
+    width: 33%;
   }
   
   .main__section:nth-child(odd) .main__section-title {
