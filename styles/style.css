@@ -149,7 +149,7 @@
 }
 
 .additional_space {
-  padding-top: 1.9em;
+  padding-top: 3.8em;
 }
 
 .main__section-text { 
@@ -200,6 +200,10 @@
     padding-left: 0;
   }
 
+  .footer {
+    margin-top: 5.1em;
+  }
+
   .header__theme-menu-button_active {
     padding-left: 10px;
     padding-right: 10px;
@@ -245,11 +249,14 @@
   }
 
   .main__image-set {
-    padding: var(--common-padding);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: clamp(48rem, 0rem + 100vi, 64rem);
+    padding-left: var(--common-padding);
+    padding-right: var(--common-padding);
+    gap: 1.4em;
+    overflow: visible;
   }
 
   .main__image-set__item__image {
@@ -257,6 +264,7 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    padding: 0;
   }
 
   .main__image-set__item__image--sunset {
