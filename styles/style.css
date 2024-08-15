@@ -328,3 +328,7 @@
   outline: none;
   border: 1px solid var(--section-font-color);
 }
+
+.not-emphasised {
+  font-weight: normal;
+}
