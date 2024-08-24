@@ -58,7 +58,7 @@
 
 .main {
   display: grid;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .main__section-link {
@@ -130,7 +130,7 @@
 
 .main__section {
   display: grid;
-  gap: 1.5em;
+  gap: 1.2em;
   padding-top: 2.5em;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .additional_space {
-  padding-top: 3.8em;
+  padding-top: 2em;
 }
 
 .main__section-text { 
@@ -194,6 +194,11 @@
 }
 
 @media (min-width: 768px) {
+
+  .main {
+    gap: 1em;
+  }
+
   .accent__title {
     display: flex;
     align-self: center;
@@ -209,6 +214,10 @@
     padding-right: 10px;
   }
 
+  .additional_space {
+    padding-top: 3.8em;
+  }
+
   .header .title-decor {
     display: flex;
     justify-self: end;
@@ -218,6 +227,7 @@
   }
 
   .main__section {
+    gap: 0;
     column-gap: 0;
     row-gap: 1.2rem;
     padding-top: 3.9em;
@@ -286,6 +296,11 @@
 
 @media (min-width: 1024px) {
 
+  .main {
+    display: grid;
+    gap: 1em;
+  }
+
   .footer {
     margin-top: 6em;
   }
@@ -305,7 +320,12 @@
     gap: 1.4em;
   }
 
+  .additional_space {
+    padding-top: 3.8em;
+  }
+
   .main__section {
+    gap: auto;
     padding-left: var(--common-padding);
     padding-right: var(--common-padding);
     column-gap: 0.3rem;
