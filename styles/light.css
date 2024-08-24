@@ -23,16 +23,16 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-:root {
-      /* Дублируем переменные светлой темы */ 
-      --accent-font-color: #353430;
-      --section-font-color: #353430;
-      --font-color: #353430;
-      --header-color: #FFC2E6;
-      --header-shadow: #FF8DCB;
-      --backgroung-path: url(../images/cover-image-light.png);
-      --accent-text_background-color: #FF8DCB;
-      --decor_elem_display: none;
-      --page-background-color: #FFF;
-  }
+  :root {
+        /* Дублируем переменные светлой темы */ 
+        --accent-font-color: #353430;
+        --section-font-color: #353430;
+        --font-color: #353430;
+        --header-color: #FFC2E6;
+        --header-shadow: #FF8DCB;
+        --backgroung-path: url(../images/cover-image-light.png);
+        --accent-text_background-color: #FF8DCB;
+        --decor_elem_display: none;
+        --page-background-color: #FFF;
+    }
 }

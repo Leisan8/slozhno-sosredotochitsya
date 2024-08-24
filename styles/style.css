@@ -52,10 +52,6 @@
   max-width: 100%; 
 }
 
-.main__section-text {
-  color: var(--section-font-color);
-}
-
 .main {
   display: grid;
   gap: 0.5em;
@@ -156,6 +152,7 @@
   font-size: var(--font-size);
   padding-left: var(--common-padding);
   padding-right: var(--common-padding);
+  color: var(--section-font-color);
 }
 
 .main__image-set {
