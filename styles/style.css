@@ -334,7 +334,6 @@
   }
 
   .main__section {
-    gap: auto;
     padding-left: var(--common-padding);
     padding-right: var(--common-padding);
     column-gap: 0.3rem;
