@@ -242,6 +242,7 @@
   }
 
   .main__section-title {
+    grid-column: 1 / -1;
     padding-right: 0;
   }
 
@@ -346,10 +347,7 @@
 
   .special_section {
     display: grid;
-  }
-
-  .special_section .main__subsection {
-    grid-row: 2;
+    grid-template-columns: repeat(3, 1fr); 
   }
 
   .accent__title {
@@ -382,7 +380,7 @@
   }
 
   .special_section .main__section-title {
-    width: 100%;
+    width: 33%;
   }
 
   .main__image-set {
