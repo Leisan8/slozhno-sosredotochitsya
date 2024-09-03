@@ -86,8 +86,8 @@
   justify-content: right;
   align-items: end;
   grid-row: 1;
-  padding-right: var(--nav-padding);
-  padding-bottom: var(--nav-padding);
+  padding-right: 0.8rem;
+  padding-bottom: 1.3rem;
 }
 
 .header__theme-menu-list {
@@ -101,6 +101,7 @@
   border: none;
   text-transform: lowercase;
   cursor: pointer;
+  padding: 0 0.7rem;
 }
 
 .decorated-zone::before {
@@ -194,6 +195,11 @@
 
   .main {
     gap: 1em;
+  }
+
+  .header__theme-menu {
+    padding-right: 1.3rem;
+    padding-bottom: 1.2rem;
   }
 
   .accent__title {
@@ -307,14 +313,15 @@
     justify-content: center;
     align-items: start;
     grid-row: 1;
-    /* padding-right: var(--common-padding); */
+    padding-right: 0.8rem;
+    padding-bottom: 1.3rem;
   }
 
   .header__theme-menu-list {
     padding-top: var(--common-padding);
     display: flex;
     flex-direction: row;
-    gap: 1.4em;
+    gap: 0.6em;
   }
 
   .additional_space {
