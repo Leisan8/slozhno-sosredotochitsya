@@ -19,6 +19,8 @@
   color: var(--accent-font-color);
   font-size: var(--font-size);
   gap: 3em;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .decor-element {
@@ -27,6 +29,7 @@
   top: var(--common-padding); 
   right: var(--common-padding); 
   padding-right: 0.5em;
+  text-transform: uppercase;
 }
 
 .decor-element::after {
@@ -180,6 +183,8 @@
   justify-content: center;
   align-items: center; 
   margin-top: 2.5em;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .header__theme-menu-button_active {
