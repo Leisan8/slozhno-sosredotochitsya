@@ -304,20 +304,13 @@
 
 @media (min-width: 1024px) {
 
-  .main {
-    display: grid;
-    gap: 1em;
-  }
-
   .footer {
     margin-top: 6em;
   }
   
   .header__theme-menu {
-    display: flex;
     justify-content: center;
     align-items: start;
-    grid-row: 1;
     padding-right: 0.8rem;
     padding-bottom: 1.3rem;
   }
