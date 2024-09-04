@@ -182,9 +182,9 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-top: 2.5em;
   height: 100vh;
   min-height: 668px;
+  margin-top: 4em;
 }
 
 .header__theme-menu-button_active {
@@ -211,10 +211,6 @@
     display: flex;
     align-self: center;
     padding-left: 0;
-  }
-
-  .footer {
-    margin-top: 5.1em;
   }
 
   .header__theme-menu-button_active {
@@ -270,11 +266,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: clamp(48rem, 0rem + 100vi, 64rem);
+    height: clamp(66rem, 0rem + 100vi, 64rem);
     padding-left: var(--common-padding);
     padding-right: var(--common-padding);
     gap: 1.4em;
-    overflow: visible;
   }
 
   .main__image-set__item__image {
@@ -303,10 +298,6 @@
 
 
 @media (min-width: 1024px) {
-
-  .footer {
-    margin-top: 6em;
-  }
   
   .header__theme-menu {
     justify-content: center;
